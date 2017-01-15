@@ -1,7 +1,24 @@
 <html>
     <head>
+      <script>
+       window.onload = function() {
+         changeName();
+       }
+
+       function changeName() {
+         nameTextbox = document.getElementById("nameTextbox");
+         nameLabel = document.getElementById("nameLabel");
+         nameLabel.innerHTML = nameTextbox.value;
+       }
+      </script>
     </head>
     <body>
-        <p>Ronin</p>
+        <form>
+          <p>
+            <input type='text' id='nameTextbox'>
+          </p>
+        </form>
+        <button onclick='changeName()'>Engrave</button>
+        <p id='nameLabel'></p>
     </body>
 </html>
