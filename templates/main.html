@@ -1,19 +1,31 @@
 <html>
     <head>
       <script src='/js/nameLabel.js' type='text/javascript'></script>
+      <script src='/js/ronin.js' type='text/javascript'></script>
       <script src='/js/events.js' type='text/javascript'></script>
+      <script src='/js/game.js' type='text/javascript'></script>
       <script>
        window.onload = function() {
+         gameLoop();
        }
       </script>
     </head>
     <body>
-        <form>
-          <p>
-            <input type='text' id='nameTextbox'>
-          </p>
-        </form>
-        <button onclick='changeName()'>Engrave</button>
-        <p id='nameLabel'></p>
+        <!--
+          Ronin attributes display.
+        -->
+        <p id='katana'>Katana <span id='katanaValue'>0</span></p>
+        <p id='endurance'>Endurance <span id='enduranceValue'>0</span></p>
+        <p id='honor'>Honor <span id='honorValue'>0</span></p>
+
+
+        <!--
+          Testing out Events
+        -->
+        <p id="eventParagraph"></p>
+        <button id='option1'>Option1</button>
+        <button id='option2'>Option2</button>
+        <div></div>
+        <button onclick='generateEvent()'>Event</button>
     </body>
 </html>
