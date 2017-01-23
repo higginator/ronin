@@ -96,6 +96,7 @@ share/
 #BKQ tilde stuff
 *~
 *pyc
+*swp
 
 #DS STORE
 .DS_Store
