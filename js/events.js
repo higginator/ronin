@@ -49,6 +49,7 @@ function makeEvents() {
   return events;
 }
 
+// Generate an event from an array of events.
 function generateEvent() {
-  
+
 }
